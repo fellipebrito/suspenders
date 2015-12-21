@@ -8,6 +8,9 @@ set -e
 # Set up Ruby dependencies via Bundler
 bundle install
 
+# Spring setup
+spring binstub rspec
+
 # Add binstubs to PATH in ~/.zshenv like this:
 #   export PATH=".git/safe/../../bin:$PATH"
 mkdir -p .git/safe
